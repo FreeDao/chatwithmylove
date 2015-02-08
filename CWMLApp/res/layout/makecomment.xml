@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<RelativeLayout 
+    	android:layout_height="47dip"
+    	android:background="@drawable/top_bg"
+		android:layout_width="fill_parent" 
+		android:id="@+id/layout_11"
+		android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		
+	>
+        <TextView 
+        	android:id="@+id/textViewaddcomment" 
+        	android:text="@string/addcomment"
+			style="@style/TitleTextView"
+			
+		/>
+
+        <TextView
+             android:id="@+id/textView_savecomment"
+             style="@style/TitleTextView"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="230dp"
+             android:layout_toRightOf="@+id/textViewaddcomment"
+             android:clickable="true"
+             android:onClick="onAddCommentClick"
+             android:text="@string/sendcomment" />
+
+	</RelativeLayout>
+	
+	 <RelativeLayout
+	     android:id="@+id/layout_22"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentBottom="true"
+	     android:layout_alignParentLeft="true"
+	     android:layout_alignParentRight="true"
+	     android:layout_below="@+id/layout_11"
+	     android:layout_marginTop="0dip"
+	     android:background="@drawable/panel_bg"
+	     android:minHeight="165dip" >
+
+    <EditText
+        android:id="@+id/editText_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="@string/inputcontent" >
+       
+    </EditText>
+
+   
+
+ 
+	</RelativeLayout>
+
+
+</RelativeLayout>

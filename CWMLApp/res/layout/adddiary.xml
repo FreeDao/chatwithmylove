@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<RelativeLayout 
+    	android:layout_height="47dip"
+    	android:background="@drawable/top_bg"
+		android:layout_width="fill_parent" 
+		android:id="@+id/layout_11"
+		android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		
+	>
+        <TextView 
+        	android:id="@+id/textViewadddiary" 
+        	android:text="@string/adddiary"
+			style="@style/TitleTextView"
+			
+		/>
+
+        <TextView
+             android:id="@+id/textView_saveDiary"
+             style="@style/TitleTextView"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="230dp"
+             android:layout_toRightOf="@+id/textViewadddiary"
+             android:onClick="onAddDiaryClick"
+             android:clickable="true"
+             android:text="@string/send" />
+
+	</RelativeLayout>
+	
+	 <RelativeLayout
+	     android:id="@+id/layout_22"
+	     android:layout_width="fill_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_alignParentBottom="true"
+	     android:layout_alignParentLeft="true"
+	     android:layout_alignParentRight="true"
+	     android:layout_below="@+id/layout_11"
+	     android:layout_marginTop="0dip"
+	     android:background="@drawable/panel_bg"
+	     android:minHeight="165dip" >
+
+    <EditText
+        android:id="@+id/editText_diarytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputtitle" >
+
+       
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_diarycontent"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"     
+        android:layout_below="@+id/editText_diarytitle"
+        android:hint="@string/inputcontent" >
+
+       
+    </EditText>
+
+    
+
+</RelativeLayout>
+
+
+</RelativeLayout>

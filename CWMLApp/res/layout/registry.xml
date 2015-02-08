@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/root"
+	android:background="@drawable/message_list_view_bg"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+>
+    <RelativeLayout 
+    	android:layout_height="47dip"
+    	android:background="@drawable/top_bg"
+		android:layout_width="fill_parent" 
+		android:id="@+id/layout_1"
+		android:layout_alignParentTop="true" 
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		
+	>
+        <TextView 
+        	android:id="@+id/textView1" 
+        	android:text="@string/signin"
+			style="@style/TitleTextView"
+		/>
+	</RelativeLayout>
+	<RelativeLayout 
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/panel_bg"
+		android:layout_width="fill_parent" 
+		android:id="@+id/layout_2"
+		android:layout_marginLeft="10dip"
+		android:layout_marginRight="10dip"
+		android:layout_marginTop="10dip"
+		android:minHeight="165dip"
+		android:layout_below="@+id/layout_1"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+	>
+		<EditText 
+			android:layout_width="fill_parent" 
+			android:layout_height="50dip"
+			android:hint="@string/name"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip"
+			android:layout_marginTop="10dip"
+			android:id="@+id/registry_name"
+			android:singleLine="true"
+			android:paddingLeft="10dip"
+		/>	
+		<EditText 
+			android:layout_width="fill_parent" 
+			android:layout_height="50dip"
+			android:hint="@string/password"
+			android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip"
+			android:id="@+id/registry_password"
+			android:password="true"
+			android:singleLine="true"
+			android:layout_below="@+id/registry_name"
+			android:paddingLeft="10dip"
+		/>
+		<EditText 
+			android:layout_width="fill_parent" 
+			android:layout_height="50dip"
+			android:hint="@string/sex"
+			android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip"
+			android:id="@+id/registry_sex"
+			android:singleLine="true"
+			android:layout_below="@+id/registry_password"
+			android:paddingLeft="10dip"
+		/>
+		<EditText 
+			android:layout_width="fill_parent" 
+			android:layout_height="50dip"
+			android:hint="@string/age"
+			android:layout_marginLeft="5dip"
+			android:layout_marginRight="5dip"
+			android:id="@+id/registry_age"
+			android:singleLine="true"
+			android:layout_below="@+id/registry_sex"
+			android:paddingLeft="10dip"
+		/>
+
+		<Button
+		    android:id="@+id/signin"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dip"
+		    android:layout_alignRight="@+id/registry_age"
+		    android:layout_below="@+id/registry_age"
+		    android:layout_marginBottom="10dip"
+		    android:layout_marginLeft="0dip"
+		    android:layout_marginRight="2dip"
+		    android:layout_marginTop="5dip"
+		    android:background="@drawable/button"
+		    android:minWidth="100dip"
+		    android:onClick="onSigninAndLoginClick"
+		    android:text="@string/signin"
+		    android:textColor="#fff"
+		    android:textSize="18sp" />
+
+	</RelativeLayout>
+</RelativeLayout>
+
+
